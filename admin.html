@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager - Oma Isi Webseite</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // Live-Vorschau: Zeigt die Termine so an, wie sie auf der echten Webseite aussehen
+      CMS.registerPreviewStyle("/style.css");
+
+      var TerminePreview = createClass({
+        render: function() {
+          var entry = this.props.entry;
+          var seminare = entry.getIn(['data', 'seminare']);
+          var reiki = entry.getIn(['data', 'reiki']);
+
+          var seminareCards = [];
+          if (seminare) {
+            seminareCards = seminare.map(function(item, index) {
+              return h('div', {className: 'seminar-card', key: 's' + index}, 
+                h('div', {className: 'seminar-date'}, item.get('datum')),
+                h('div', {className: 'seminar-title'}, item.get('titel')),
+                h('div', {className: 'seminar-details'}, 
+                  h('span', {className: 'seminar-time'}, item.get('zeit')),
+                  h('span', {className: 'seminar-price'}, item.get('preis'))
+                )
+              );
+            }).toArray();
+          }
+
+          var reikiCards = [];
+          if (reiki) {
+            reikiCards = reiki.map(function(item, index) {
+              return h('div', {className: 'seminar-card', key: 'r' + index}, 
+                h('div', {className: 'seminar-date'}, item.get('datum')),
+                h('div', {className: 'seminar-title'}, item.get('titel')),
+                h('div', {className: 'seminar-details'}, 
+                  h('span', {className: 'seminar-time'}, item.get('zeit')),
+                  h('span', {className: 'seminar-price'}, item.get('preis'))
+                )
+              );
+            }).toArray();
+          }
+
+          return h('div', {style: {padding: '2rem', background: '#f4f1ea', minHeight: '100vh'}}, 
+            h('h2', {className: 'section-title', style: {fontFamily: 'Lora, serif', color: '#4a4a4a', marginBottom: '1.5rem'}}, 'Seminare & Kurse'),
+            h('div', {className: 'seminar-grid'}, seminareCards),
+            h('h2', {className: 'section-title', style: {fontFamily: 'Lora, serif', color: '#4a4a4a', marginTop: '3rem', marginBottom: '1.5rem'}}, 'Reiki-Angebote'),
+            h('div', {className: 'seminar-grid'}, reikiCards)
+          );
+        }
+      });
+
+      CMS.registerPreviewTemplate("termine", TerminePreview);
+    </script>
+  </body>
+</html>
