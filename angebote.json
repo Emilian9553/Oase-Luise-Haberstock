@@ -1,12 +1,6 @@
 {
   "seminare": [
     {
-      "datum": "So 9. Aug",
-      "titel": "Übungsseminar",
-      "zeit": "9:30 - 18:00 Uhr",
-      "preis": "130€"
-    },
-    {
       "datum": "So 6. Sept",
       "titel": "Thema (eigene Themenwahl)",
       "zeit": "9:30 - 18:00 Uhr",
