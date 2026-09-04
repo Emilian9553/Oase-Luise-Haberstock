@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "angebote"
+    label: "Angebote & Seminare"
+    files:
+      - label: "Termine"
+        name: "termine"
+        file: "angebote.json"
+        fields:
+          - name: seminare
+            label: Seminare
+            widget: list
+            fields:
+              - {label: "Datum", name: "datum", widget: "string"}
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Zeit", name: "zeit", widget: "string", default: "9:30 - 18:00 Uhr"}
+              - {label: "Preis", name: "preis", widget: "string"}
+          - name: reiki
+            label: Reiki-Angebote
+            widget: list
+            fields:
+              - {label: "Datum", name: "datum", widget: "string"}
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Zeit", name: "zeit", widget: "string", default: "9:30 - 18:00 Uhr"}
+              - {label: "Preis", name: "preis", widget: "string"}
