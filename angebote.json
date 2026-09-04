@@ -1,0 +1,84 @@
+{
+  "seminare": [
+    {
+      "datum": "So 9. Aug",
+      "titel": "Übungsseminar",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "130€"
+    },
+    {
+      "datum": "So 6. Sept",
+      "titel": "Thema (eigene Themenwahl)",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "100€"
+    },
+    {
+      "datum": "Sa 19. Sept",
+      "titel": "Rituale zum Herbstanfang",
+      "zeit": "19:00 - 22:00 Uhr",
+      "preis": "25€"
+    },
+    {
+      "datum": "So 3. Oktober",
+      "titel": "Connys Hütte, Der Weg zu mir",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "130€"
+    },
+    {
+      "datum": "So 25. Okt",
+      "titel": "Familienaufstellung",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "130€"
+    },
+    {
+      "datum": "So 15. Nov",
+      "titel": "Thema \"Seelenvereinbarung\"",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "100€"
+    },
+    {
+      "datum": "Sa 5. Dez",
+      "titel": "Weihnachtsfeier",
+      "zeit": "15:00 - 18:00 Uhr",
+      "preis": "Kostenfrei"
+    },
+    {
+      "datum": "So 27. Dez",
+      "titel": "Rituale zum Jahresausklang",
+      "zeit": "15:00 - 18:00 Uhr",
+      "preis": "25€"
+    }
+  ],
+  "reiki": [
+    {
+      "datum": "1. HJ 2027",
+      "titel": "Reiki I",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "200€"
+    },
+    {
+      "datum": "1. HJ 2027",
+      "titel": "Reiki II",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "300€"
+    },
+    {
+      "datum": "1. HJ 2027",
+      "titel": "Reiki Meister",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "P.a.A."
+    },
+    {
+      "datum": "Auf Anfrage",
+      "titel": "Reiki-Lehrer",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "P.a.A."
+    },
+    {
+      "datum": "1. Nov",
+      "titel": "Herzreiki",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "170€"
+    }
+  ]
+}
