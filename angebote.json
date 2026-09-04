@@ -1,0 +1,57 @@
+{
+  "allgemein": {
+    "startseite_titel": "Der Weg ins Licht",
+    "startseite_text": "Herzlich Willkommen in der spirituellen Praxis Oase. Entdecken Sie Ihre innere Mitte durch Reiki, Meditationen und Familienaufstellungen.",
+    "startseite_hinweis": "Hinweis: Einzeltermine sind auch über Skype, Zoom, WhatsApp oder Mail möglich.",
+    "header_bild": "luise-haberstock.jpg"
+  },
+  "kontakt": {
+    "name": "Luise Haberstock",
+    "strasse": "Bettenried 4 1/2",
+    "ort": "87527 Ofterschwang",
+    "telefon": "08321 7007",
+    "email": "oase1.lh@web.de"
+  },
+  "regelmaessig": {
+    "meditation_text": "Gemeinsam zur inneren Mitte finden und Kraft für den Alltag tanken.",
+    "meditation_preis": "Preis: 10€",
+    "meditation_zeit": "Jeden Dienstag, 19:30 Uhr",
+    "meditation_hinweis": "Wichtiger Hinweis: Im Juli/August am Dienstag keine Meditation.",
+    "familie_text": "Verborgene Dynamiken erkennen und heilsame Lösungen finden.",
+    "familie_preis": "Aufstellung: 100€ | Begleitung: 5€",
+    "familie_zeit": "Jeden Mittwoch, 20:00 Uhr",
+    "allgemeiner_hinweis": "Hinweis: Falls ein Dienstag/Mittwoch ausfällt, wird es hier angezeigt."
+  },
+  "seminare": [
+    {
+      "datum": "So 6. Sept",
+      "titel": "Thema (eigene Themenwahl",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "100€",
+      "status": "Aktiv"
+    },
+    {
+      "datum": "Sa 19. Sept",
+      "titel": "Rituale zum Herbstanfang",
+      "zeit": "19:00 - 22:00 Uhr",
+      "preis": "25€",
+      "status": "Aktiv"
+    },
+    {
+      "datum": "So 3. Oktober",
+      "titel": "Connys Hütte, Der Weg zu mir",
+      "zeit": "9:30 - 18:00 Uhr",
+      "preis": "110€",
+      "status": "Aktiv"
+    }
+  ],
+  "reiki": [
+    {
+      "datum": "1.HJ27",
+      "titel": "Reiki I",
+      "zeit": "1. Tag 9:30 - 18:00 Uhr\n2. Tag 9:30 - 17:00 Uhr",
+      "preis": "220€",
+      "status": "Aktiv"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "website"
+    label: "Website-Inhalte"
+    files:
+      - label: "Startseite & Kontakt"
+        name: "allgemein"
+        file: "angebote.json"
+        fields:
+          - name: allgemein
+            label: "Startseite (Ganz oben)"
+            widget: object
+            fields:
+              - {label: "Titel", name: "startseite_titel", widget: "string"}
+              - {label: "Begrüßungstext", name: "startseite_text", widget: "text"}
+              - {label: "Wichtiger Hinweis Box", name: "startseite_hinweis", widget: "string"}
+              - {label: "Header-Bild", name: "header_bild", widget: "image", required: false}
+          - name: kontakt
+            label: "Kontakt-Daten (Ganz unten)"
+            widget: object
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Straße", name: "strasse", widget: "string"}
+              - {label: "Ort", name: "ort", widget: "string"}
+              - {label: "Telefon", name: "telefon", widget: "string"}
+              - {label: "E-Mail", name: "email", widget: "string"}
+
+      - label: "Regelmäßige Angebote"
+        name: "regelmaessig"
+        file: "angebote.json"
+        fields:
+          - name: regelmaessig
+            label: "Meditation & Familienaufstellung"
+            widget: object
+            fields:
+              - {label: "Meditation Text", name: "meditation_text", widget: "text"}
+              - {label: "Meditation Preis", name: "meditation_preis", widget: "string"}
+              - {label: "Meditation Zeit", name: "meditation_zeit", widget: "string"}
+              - {label: "Meditation Zusatzhinweis", name: "meditation_hinweis", widget: "string"}
+              - {label: "Familienaufstellung Text", name: "familie_text", widget: "text"}
+              - {label: "Familienaufstellung Preis", name: "familie_preis", widget: "string"}
+              - {label: "Familienaufstellung Zeit", name: "familie_zeit", widget: "string"}
+              - {label: "Allgemeiner Hinweis unten", name: "allgemeiner_hinweis", widget: "string"}
+
+      - label: "Termine: Seminare & Reiki"
+        name: "termine"
+        file: "angebote.json"
+        fields:
+          - name: seminare
+            label: "Anstehende Seminare"
+            widget: list
+            summary: "{{datum}} – {{titel}} ({{preis}}) [{{status}}]"
+            fields:
+              - {label: "Datum", name: "datum", widget: "string"}
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Zeit", name: "zeit", widget: "string", default: "9:30 - 18:00 Uhr"}
+              - {label: "Preis", name: "preis", widget: "string"}
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["Aktiv", "Abgesagt"]
+                default: "Aktiv"
+          - name: reiki
+            label: "Reiki-Angebote"
+            widget: list
+            summary: "{{datum}} – {{titel}} ({{preis}}) [{{status}}]"
+            fields:
+              - {label: "Datum", name: "datum", widget: "string"}
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Zeit", name: "zeit", widget: "string", default: "9:30 - 18:00 Uhr"}
+              - {label: "Preis", name: "preis", widget: "string"}
+              - label: "Status"
+                name: "status"
+                widget: "select"
+                options: ["Aktiv", "Abgesagt"]
+                default: "Aktiv"
